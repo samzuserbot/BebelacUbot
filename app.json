@@ -1,0 +1,51 @@
+{
+  "name": "Prime",
+  "description": "Prime, adalah userbot pyrogram yang menggunakn MongoDB database",
+  "env": {
+    "API_ID": {
+      "description": "Dapatkan di my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan di my.telegram.org.",
+      "required": true
+    },
+    "SESSION": {
+      "description": "Dapatkan dengan perintah [python3 mysession.py] di Termux atau local system. atau bisa menggunakan bot string apa aja dan pilih Pyrogram",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "Kamu bisa dapatkan di mongodb.com.",
+      "required": true
+    },
+    "HEROKU_API": {
+      "description": "Isi dengan api heroku jika kamu menggunakan heroku.",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Isi dengan api heroku jika kamu menggunakan heroku.",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Command handler.",
+      "required": true,
+      "vale": "."
+    },
+    "GIT_TOKEN": {
+      "description": "Dapatkan di group support kami di @PrimeSupportGroup atau @musikkugroup",
+      "required": true,
+      "value": ""
+    },
+    "LOG_CHAT": {
+      "description": "Group private untuk log awalan -100.",
+      "required": true,
+      "value": "-100"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
