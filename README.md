@@ -8,9 +8,20 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 
 > Kami tidak bertanggung jawab dengan segala masalah terhadap akun anda, ketika anda sudah berniat mendeploy bot ini, berarti anda sudah siap dengan resikonya
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BukanDev/Prime-Userbot)
+# Deploy on Heroku or VPS
+<details>
+<summary><b> 🚀 Heroku Deployment</b></summary>
+<br>
 
-*How to run this bot*
+<h4>Click the button below to deploy Prime on Heroku!</h4>
+  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BukanDev/Prime-Userbot)
+</details>
+
+<details>
+<summary><b>🔗 Deploy on VPS</b></summary>
+<br>
+<h4>Follow the steps below to deploy Prime on a VPS!</h4>
 
 - `git clone https://github.com/BukanDev/Prime-Userbot`
 - `cd Prime-Userbot`
@@ -19,7 +30,9 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 - `config.py`
 - `python3 -m Prime`
 
-# Credit
+</details>
+  
+# Credits
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram) - base
 - [Toni](https://github.com/Toni880) - Prime
