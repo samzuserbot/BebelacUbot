@@ -12,14 +12,9 @@ import time
 from pyrogram import Client, errors
 
 from config import API_HASH, API_ID, SESSION
+from Prime.database.git import git
 
-logging.basicConfig(
-    filename="app.txt",
-    level=logging.ERROR,
-    format="%(asctime)s %(levelname)s %(name)s %(message)s",
-)
-LOGGER = logging.getLogger(__name__)
-
+git()
 HELP = {}
 CMD_HELP = {}
 
