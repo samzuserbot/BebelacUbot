@@ -11,4 +11,4 @@ PRIME_LOGO = os.getenv(
 LOG_CHAT = int(os.getenv("LOG_CHAT"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
-REPO_URL = os.getenv("REPO_URL", "https://github.com/Toni880/Prime-Userbot")
+GIT_TOKEN = os.getenv("GIT_TOKEN")
