@@ -7,7 +7,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 
 from config import GIT_TOKEN
 
-from Prime import LOGGER
+from Prime.logging import LOGGER
 
 REPO_URL = "https://github.com/terpantaukah/Prime-Userbot"
 BRANCH = "master"
