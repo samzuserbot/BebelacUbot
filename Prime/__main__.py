@@ -13,7 +13,7 @@ from pyrogram.errors import BadRequest
 
 from config import LOG_CHAT, PREFIX
 from Prime import app, bot
-from database.git import git
+from Prime.database.git import git
 git()
 app.start()
 bot.start()
