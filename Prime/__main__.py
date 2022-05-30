@@ -12,9 +12,8 @@ from pyrogram import idle
 from pyrogram.errors import BadRequest
 
 from config import LOG_CHAT, PREFIX
-from Prime import app, bot
-from Prime.database.git import git
-git()
+from Prime import app
+
 app.start()
 bot.start()
 me = app.get_me()
