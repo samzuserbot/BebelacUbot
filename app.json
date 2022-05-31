@@ -23,7 +23,7 @@
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "Isi dengan api heroku jika kamu menggunakan heroku.",
+      "description": "Isi dengan app name heroku jika kamu menggunakan heroku.",
       "required": false
     },
     "PREFIX": {
