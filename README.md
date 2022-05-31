@@ -27,7 +27,7 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 - `cd Prime-Userbot`
 - `pip3 install -r requirements.txt`
 - `python3 makesession.py` 
-- `nano sample.env`
+- `nano sample.env` kalau sudah di isi klik ctrl+x ctrl+y enter
 - `cp sample.env .env`
 - `python3 -m Prime`
 
