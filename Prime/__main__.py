@@ -15,7 +15,6 @@ from config import LOG_CHAT, PREFIX
 from Prime import app
 
 app.start()
-bot.start()
 me = app.get_me()
 
 print(
