@@ -40,4 +40,4 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 - [ZectUserBot](https://github.com/SHRE-YANSH)
 
 
-INGAT REPO ORIGINAL MASIH DI PRIVATE KALAU ANDA MAU DEPLOY REPO INI ANDA WAJIB PUNYA GIT_TOKEN DARI ADMIN KALIAN BISA MINTA DI [@PrimeSupportGroup](t.me/primesupportgroup)
+INGAT REPO ORIGINAL MASIH DI PRIVATE KALAU ANDA MAU DEPLOY REPO INI ANDA WAJIB PUNYA GIT_TOKEN DARI ADMIN KALIAN BISA MINTA DI [@PrimeSupportGroup](https://t.me/primesupportgroup)
