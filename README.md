@@ -8,7 +8,7 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 
 > Kami tidak bertanggung jawab dengan segala masalah terhadap akun anda, ketika anda sudah berniat mendeploy bot ini, berarti anda sudah siap dengan resikonya
 
-# Deploy on Heroku or VPS
+# Deploy on Heroku
 <details>
 <summary><b> 🚀 Heroku Deployment</b></summary>
 <br>
@@ -18,21 +18,6 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BukanDev/Prime-Userbot)
 </details>
 
-<details>
-<summary><b>🔗 Deploy on VPS</b></summary>
-<br>
-<h4>Follow the steps below to deploy Prime on a VPS!</h4>
-
-- `git clone https://github.com/BukanDev/Prime-Userbot`
-- `cd Prime-Userbot`
-- `pip3 install -r requirements.txt`
-- `python3 makesession.py` 
-- `nano sample.env` kalau sudah di isi klik ctrl+x ctrl+y enter
-- `cp sample.env .env`
-- `screen -S Prime`
-- `python3 -m Prime`
-
-</details>
   
 # Credits
 
