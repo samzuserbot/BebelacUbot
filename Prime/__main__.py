@@ -26,7 +26,9 @@ try:
         f"🔥 **Prime Userbot Udah aktif**🔥\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**Pyrogram Version** : `{pyver}`\n└ •**Support By**: @PrimeSupportGroup\n└ •**Patner**: @musikkugroup",
     )
     app.join_chat("primesupportgroup")
+    app.join_chat("primesupportchannel")
     app.join_chat("musikkugroup")
+    app.join_chat("musikkuchannel")
     idle()
 except BadRequest:
     pass
