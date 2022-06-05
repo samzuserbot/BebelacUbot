@@ -22,3 +22,4 @@ datetime
 speedtest-cli
 wget
 pyshorteners
+psutil
