@@ -19,3 +19,4 @@ requests
 wikipedia
 bitlyshortener==0.3.5
 datetime
+speedtest-cli
