@@ -1,6 +1,6 @@
 pyrogram==1.4.16
 tgcrypto
-aiohttp==3.6.2
+aiohttp==3.8.1
 aiofiles
 pymongo
 motor
@@ -15,3 +15,7 @@ telegraph==1.4.1
 numpy
 googletrans==4.0.0-rc1
 gTTS
+requests
+wikipedia
+bitlyshortener==0.3.5
+datetime
