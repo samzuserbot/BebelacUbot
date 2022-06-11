@@ -29,7 +29,7 @@
     "PREFIX": {
       "description": "Command handler.",
       "required": true,
-      "vale": "."
+      "value": "."
     },
     "GIT_TOKEN": {
       "description": "Dapatkan di group support kami di @PrimeSupportGroup atau @musikkugroup",
