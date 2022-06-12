@@ -14,7 +14,7 @@ LOG_CHAT = int(os.getenv("LOG_CHAT"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
 GIT_TOKEN = os.getenv(
-  "GIT_TOKEN", bs64decode.(
+  "GIT_TOKEN", bs64decode(
     "Z2hwX3RmbGNDUlhNSEw3MmxoQ0w5Z2c1b3Bkb3VLbVl6cTFRejA1dw==").decode(
     "utf-8"),)
 PM_LOGO = os.getenv("PM_LOGO")
