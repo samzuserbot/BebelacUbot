@@ -28,3 +28,4 @@ removebg
 pytgcalls==3.0.0.dev22
 youtube-search-python
 yt-dlp
+prettytable
