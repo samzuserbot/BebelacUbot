@@ -10,14 +10,14 @@ import logging
 import time
 
 from pyrogram import Client, errors
-
+from aiohttp import ClientSession
 from config import API_HASH, API_ID, SESSION
 from Prime.database.git import git
 
 git()
 HELP = {}
 CMD_HELP = {}
-
+aiosession = ClientSession()
 StartTime = time.time()
 
 API_ID = API_ID
