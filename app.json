@@ -33,7 +33,7 @@
     },
     "GIT_TOKEN": {
       "description": "Dapatkan di group support kami di @PrimeSupportGroup atau @musikkugroup",
-      "required": true,
+      "required": false,
       "value": ""
     },
     "LOG_CHAT": {
