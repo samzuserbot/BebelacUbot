@@ -29,6 +29,7 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 - [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) - YukkiMusicBot
 - [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) - WilliamButcherBot
 - [Xyren](https://github.com/Xyren-64bit)
+- [mrismanaziz](https://github.com/mrismanaziz/PyroMan-Userbot) - PyroMan-Userbot
 
 
 INGAT REPO ORIGINAL MASIH DI PRIVATE KALAU ANDA MAU DEPLOY REPO INI ANDA WAJIB PUNYA GIT_TOKEN DARI ADMIN KALIAN BISA MINTA DI [@PrimeSupportGroup](https://t.me/primesupportgroup)
