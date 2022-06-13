@@ -15,7 +15,7 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 
 <h4>Click the button below to deploy Prime on Heroku!</h4>
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BukanDev/Prime-Userbot)
+[![Deploy](https://prime-tech-deploy.vercel.app/)
 <a href="http://telegram.dog/XTZ_HerokuBot?start=QnVrYW5EZXYvUHJpbWUtVXNlcmJvdCBtYXN0ZXI"><img src="https://telegra.ph/file/70966bb4b212649afc8dc.jpg"/></a>
 </details>
 
