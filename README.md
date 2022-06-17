@@ -19,7 +19,29 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 <a href="http://telegram.dog/XTZ_HerokuBot?start=QnVrYW5EZXYvUHJpbWUtVXNlcmJvdCBtYXN0ZXI"><img src="https://telegra.ph/file/70966bb4b212649afc8dc.jpg"/></a>
 </details>
 
-  
+# Contoh kode
+> Bagi yang mau kembangin Prime-Userbot bisa lihat contoh ini
+
+```
+from Prime import CMD_HELP, app
+from config import PREFIX
+
+CMD_HELP.update(
+    {
+        "repo": f"""
+『 **REPO** 』
+  {PREFIX}repo -> Untuk menampilkan repo Prime-Userbot.
+"""
+    }
+)
+```
+
+@app.on_message(filters.command("repo", PREFIX) & filters.me)
+async def terminal(client, message):
+    await app.send_message(message.chat.id, "[PRIME - USERBOT](https://github.com/BukanDev/Prime-Userbot)")
+    
+
+
 # Credits
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram) - base
