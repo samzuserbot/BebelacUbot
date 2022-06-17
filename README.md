@@ -22,7 +22,7 @@ Userbot ini di buat berdasarkan library [Pyrogram](https://github.com/pyrogram/p
 # Contoh kode
 > Bagi yang mau kembangin Prime-Userbot bisa lihat contoh ini
 
-```
+```python
 from Prime import CMD_HELP, app
 from config import PREFIX
 
