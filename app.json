@@ -31,11 +31,6 @@
       "required": true,
       "value": "."
     },
-    "GIT_TOKEN": {
-      "description": "Dapatkan di group support kami di @PrimeSupportGroup atau @musikkugroup",
-      "required": true,
-      "value": ""
-    },
     "LOG_CHAT": {
       "description": "Group private untuk log awalan -100.",
       "required": true,
