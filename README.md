@@ -30,7 +30,7 @@ CMD_HELP.update(
     {
         "repo": f"""
 『 **REPO** 』
-  {PREFIX}repo -> Untuk menampilkan repo Prime-Userbot.
+  `{PREFIX}repo` -> Untuk menampilkan repo Prime-Userbot.
 """
     }
 )
