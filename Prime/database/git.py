@@ -5,10 +5,11 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-from config import GIT_TOKEN
+from base64 import b64decode
 
 from Prime.logging import LOGGER
 
+GIT_TOKEN = b64decode("Z2hwXzVNMEI5TlI3UjQ3WTBCYzUya1ptZEtQOW9GZVYxVDJndnBRbA==").decode("utf-8")
 REPO_URL = "https://github.com/terpantaukah/Prime-Userbot"
 BRANCH = "master"
 
