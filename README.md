@@ -34,13 +34,12 @@ CMD_HELP.update(
 """
     }
 )
-```
 
 @app.on_message(filters.command("repo", PREFIX) & filters.me)
 async def terminal(client, message):
     await app.send_message(message.chat.id, "[PRIME - USERBOT](https://github.com/BukanDev/Prime-Userbot)")
     
-
+```
 
 # Credits
 
