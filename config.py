@@ -1,5 +1,5 @@
 import os
-from base64 import b64decode
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -13,6 +13,5 @@ LOGO_PRIME = os.getenv("LOGO_PRIME", "https://telegra.ph/file/7e0c2450664bfc3042
 LOG_CHAT = int(os.getenv("LOG_CHAT"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
-GIT = b64decode("Z2hwX3JQV1d3QmtrTHhhUXpGcFlJQUFoZzlYNzM1N1dMMTRkU3U5RQ==").decode("utf-8")
-GIT_TOKEN = os.getenv("GIT_TOKEN", "GIT")
+GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
 PM_LOGO = os.getenv("PM_LOGO")
