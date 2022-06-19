@@ -1,6 +1,7 @@
 {
   "name": "Prime",
   "description": "Prime, adalah userbot pyrogram yang menggunakn MongoDB database",
+  "stack": "heroku-22",
   "env": {
     "API_ID": {
       "description": "Dapatkan di my.telegram.org.",
