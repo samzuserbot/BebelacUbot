@@ -33,3 +33,4 @@ youtube-search-python
 yt-dlp==2021.11.10.1
 prettytable
 bs4
+pytube
