@@ -33,4 +33,3 @@ youtube-search-python
 yt-dlp
 prettytable
 bs4
-pytube
