@@ -30,6 +30,6 @@ dnspython
 removebg
 pytgcalls==3.0.0.dev22
 youtube-search-python
-yt-dlp
+yt-dlp==2021.11.10.1
 prettytable
 bs4
