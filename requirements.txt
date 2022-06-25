@@ -14,6 +14,9 @@ python-dotenv
 telegraph==1.4.1
 numpy
 googletrans==4.0.0-rc1
+google==3.0.0
+google-search==1.1.1
+googlesearch-python== 1.0.1
 gTTS
 requests
 wikipedia
@@ -29,3 +32,5 @@ pytgcalls==3.0.0.dev22
 youtube-search-python
 yt-dlp
 prettytable
+bs4
+pafy
