@@ -33,4 +33,4 @@ youtube-search-python
 yt-dlp
 prettytable
 bs4
-pafy==0.5.5
+pytube
