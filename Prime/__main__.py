@@ -13,9 +13,12 @@ from pyrogram.errors import BadRequest
 
 from config import LOG_CHAT, PREFIX
 from Prime import app
+from Prime.database.git import autopilot
+
 
 app.start()
 me = app.get_me()
+autopilot()
 
 print(
     f"Prime UserBot started for user {me.first_name}. Type {PREFIX}help in any telegram chat."
