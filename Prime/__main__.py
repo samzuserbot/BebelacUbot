@@ -17,6 +17,12 @@ from Prime import app
 app.start()
 me = app.get_me()
 
+
+if not str(LOG_CHAT).startswith("-100"):
+    print("LOG_CHAT Vars tidak terisi, Memulai Membuat Grup Otomatis...")
+    app.loop.run_until_complete(autopilot())
+
+
 print(
     f"Prime UserBot started for user {me.first_name}. Type {PREFIX}help in any telegram chat."
 )

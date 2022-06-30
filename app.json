@@ -31,11 +31,6 @@
       "description": "Command handler.",
       "required": true,
       "value": "."
-    },
-    "LOG_CHAT": {
-      "description": "Group private untuk log awalan -100.",
-      "required": true,
-      "value": "-100"
     }
   },
   "formation": {
