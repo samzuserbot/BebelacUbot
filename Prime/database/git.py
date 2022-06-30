@@ -89,7 +89,9 @@ if HEROKU_APP_NAME is not None and HEROKU_API is not None:
     heroku_var = her.config()
 else:
     her = None
-async def autopilot():
+
+
+def autopilot():
     if str(LOG_CHAT).startswith("-100"):
         print("Log group sudah benar")
         return
