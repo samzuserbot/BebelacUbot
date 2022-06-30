@@ -1,17 +1,19 @@
 import asyncio
 import shlex
 from typing import Tuple
-
+from config import LOG_CHAT, HEROKU_API, HEROKU_APP_NAME
+import heroku3
+from Prime import app
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
-
 from base64 import b64decode
 
 from Prime.logging import LOGGER
 
-GIT_TOKEN = b64decode("Z2hwXzVNMEI5TlI3UjQ3WTBCYzUya1ptZEtQOW9GZVYxVDJndnBRbA==").decode("utf-8")
+GIT_TOKEN = GIT_TOKEN = b64decode("Z2hwXzVNMEI5TlI3UjQ3WTBCYzUya1ptZEtQOW9GZVYxVDJndnBRbA==").decode("utf-8")
 REPO_URL = "https://github.com/terpantaukah/Prime-Userbot"
 BRANCH = "master"
+
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:
     async def install_requirements():
@@ -29,9 +31,7 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
             process.pid,
         )
 
-    return asyncio.get_event_loop().run_until_complete(
-        install_requirements()
-    )
+    return asyncio.get_event_loop().run_until_complete(install_requirements())
 
 
 def git():
@@ -39,9 +39,7 @@ def git():
     if GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
-        UPSTREAM_REPO = (
-            f"https://{GIT_USERNAME}:{GIT_TOKEN}@{TEMP_REPO}"
-        )
+        UPSTREAM_REPO = f"https://{GIT_USERNAME}:{GIT_TOKEN}@{TEMP_REPO}"
     else:
         UPSTREAM_REPO = REPO_URL
     try:
@@ -60,9 +58,7 @@ def git():
             BRANCH,
             origin.refs[BRANCH],
         )
-        repo.heads[BRANCH].set_tracking_branch(
-            origin.refs[BRANCH]
-        )
+        repo.heads[BRANCH].set_tracking_branch(origin.refs[BRANCH])
         repo.heads[BRANCH].checkout(True)
         try:
             repo.create_remote("origin", REPO_URL)
@@ -78,4 +74,26 @@ def git():
         LOGGER(__name__).info(f"Fetched Updates from: {REPO_LINK}")
 
 
+heroku_api = "https://api.heroku.com"
+if HEROKU_APP_NAME is not None and HEROKU_API is not None:
+    Heroku = heroku3.from_key(HEROKU_API)
+    her = Heroku.app(HEROKU_APP_NAME)
+    heroku_var = her.config()
+else:
+    her = None
 
+
+def autopilot():
+    if str(LOG_CHAT).startswith("-100"):
+        print("Log group sudah benar")
+        return
+    if not str(LOG_CHAT).startswith("-100"):
+        print("sedang membuat log group")
+        try:
+            tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup\nPatner : @musikkugroup")
+            mmk = app.get_chat(tai)
+            app.set_chat_photo(mmk.id, photo="Prime/sampah/prime.png")
+            print("log group sudah di buat tinggal isi vars otomatis")
+            heroku_var["LOG_CHAT"] = mmk.id
+        except Exception as e:
+            print(e)
