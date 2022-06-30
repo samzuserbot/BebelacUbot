@@ -26,11 +26,6 @@
     "HEROKU_APP_NAME": {
       "description": "Isi dengan app name heroku jika kamu menggunakan heroku.",
       "required": false
-    },
-    "PREFIX": {
-      "description": "Command handler.",
-      "required": true,
-      "value": "."
     }
   },
   "formation": {
