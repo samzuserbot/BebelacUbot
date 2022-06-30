@@ -10,11 +10,10 @@
 from pyrogram import __version__ as pyver
 from pyrogram import idle
 from pyrogram.errors import BadRequest
-from Prime.database.git import autopilot
+
 from config import LOG_CHAT, PREFIX
 from Prime import app
 
-autopilot()
 app.start()
 me = app.get_me()
 
