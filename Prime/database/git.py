@@ -98,7 +98,7 @@ async def autopilot():
         try:
             tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup\nPatner : @musikkugroup")
             mmk = app.get_chat(tai)
-            # app.set_chat_photo(mmk.id, photo="resauce/logo.png")
+            app.set_chat_photo(mmk.id, photo="Prime/sampah/prime.png")
             print("log group sudah di buat tinggal isi vars otomatis")
             heroku_var["LOG_CHAT"] = mmk.id
         except Exception as e:
