@@ -31,11 +31,7 @@
       "description": "Command handler.",
       "required": true,
       "value": "."
-    },
-    "LOG_CHAT": {
-      "description": "A private group id to store your logs.",
-      "required": true
-   }
+    }
   },
   "formation": {
     "worker": {
