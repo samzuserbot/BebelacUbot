@@ -1,9 +1,6 @@
 import asyncio
 import shlex
 from typing import Tuple
-from config import LOG_CHAT, HEROKU_API, HEROKU_APP_NAME
-from Prime import app
-import heroku3
 
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
@@ -82,26 +79,3 @@ def git():
 
 
 
-heroku_api = "https://api.heroku.com"
-if HEROKU_APP_NAME is not None and HEROKU_API is not None:
-    Heroku = heroku3.from_key(HEROKU_API)
-    her = Heroku.app(HEROKU_APP_NAME)
-    heroku_var = her.config()
-else:
-    her = None
-
-
-def autopilot():
-    if str(LOG_CHAT).startswith("-100"):
-        print("Log group sudah benar")
-        return
-    if not str(LOG_CHAT).startswith("-100"):
-        print("sedang membuat log group")
-        try:
-            tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup\nPatner : @musikkugroup")
-            mmk = app.get_chat(tai)
-            app.set_chat_photo(mmk.id, photo="Prime/sampah/prime.png")
-            print("log group sudah di buat tinggal isi vars otomatis")
-            heroku_var["LOG_CHAT"] = mmk.id
-        except Exception as e:
-            print(e)
