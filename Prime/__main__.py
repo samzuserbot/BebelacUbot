@@ -9,9 +9,9 @@
 
 from pyrogram import __version__ as pyver
 from pyrogram import idle
+import heroku3
 from pyrogram.errors import BadRequest
-
-from config import LOG_CHAT, PREFIX
+from config import PREFIX, LOG_CHAT, HEROKU_API, HEROKU_APP_NAME
 from Prime import app
 
 app.start()
@@ -21,14 +21,24 @@ print(
     f"Prime UserBot started for user {me.first_name}. Type {PREFIX}help in any telegram chat."
 )
 try:
+    if not str(LOG_CHAT).startswith("-100"):
+        tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup\nPatner : @musikkugroup")
+        app.set_chat_photo(tai.id, photo="Prime/sampah/prime.png")
+        Heroku = heroku3.from_key(HEROKU_API)
+        her = Heroku.app(HEROKU_APP_NAME)
+        heroku_var = her.config()
+        heroku_var["LOG_CHAT"] = tai.id
+    else:
+        print("LOG_CHAT, Sudah benar")
     app.send_message(
         LOG_CHAT,
-        f"🔥 **Prime Userbot Udah aktif**🔥\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**Pyrogram Version** : `{pyver}`\n└ •**Support By**: @PrimeSupportGroup\n└ •**Patner**: @musikkugroup",
+        f"🔥 **𝗣𝗿𝗶𝗺𝗲-𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝘂𝗱𝗮𝗵 𝗡𝘆𝗮𝗹𝗮 𝗔𝗻𝗷𝗮𝘆𝘆** 🔥\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyver}`\n└ •**ᴘʀɪᴍᴇ ᴠᴇʀsɪᴏɴ  :** `3.2.1`\n└ •**sᴜᴘᴘᴏʀᴛ ʙʏ :** @PrimeSupportGroup\n└ •**ᴘᴀʀᴛɴᴇʀ :** @musikkugroup",
     )
-    app.join_chat("primesupportgroup")
-    app.join_chat("primesupportchannel")
+    app.join_chat("PrimeSupportGroup")
+    app.join_chat("PrimeSupportChannel")
     app.join_chat("musikkugroup")
     app.join_chat("musikkuchannel")
+    
     idle()
 except BadRequest:
     pass

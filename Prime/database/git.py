@@ -1,8 +1,6 @@
 import asyncio
 import shlex
 from typing import Tuple
-
-from Prime import app
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 from base64 import b64decode
