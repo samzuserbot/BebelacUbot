@@ -11,6 +11,7 @@ pillow
 GitPython
 heroku3
 python-dotenv
+ffmpeg-python
 telegraph==1.4.1
 numpy
 googletrans==4.0.0-rc1
