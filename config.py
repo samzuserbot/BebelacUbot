@@ -13,5 +13,5 @@ LOGO_PRIME = os.getenv("LOGO_PRIME", "https://telegra.ph/file/7e0c2450664bfc3042
 LOG_CHAT = int(os.getenv("LOG_CHAT", "0"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
-GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
+GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
 PM_LOGO = os.getenv("PM_LOGO")
