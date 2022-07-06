@@ -12,7 +12,5 @@ LOGO_PRIME = os.getenv("LOGO_PRIME", "https://telegra.ph/file/7e0c2450664bfc3042
 LOG_CHAT = int(os.getenv("LOG_CHAT", "0"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
-GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
-REPO_URL = os.getenv("REPO_URL", b64decode("aHR0cHM6Ly9naXRodWIuY29tL1Rvbmk4ODAvUHJpbWUtVXNlcmJvdA==").decode("utf-8"))
-BRANCH = "master"
+GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
 PM_LOGO = os.getenv("PM_LOGO", "https://telegra.ph/file/7e0c2450664bfc304203b.jpg")
