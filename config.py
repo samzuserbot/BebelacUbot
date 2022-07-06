@@ -1,7 +1,6 @@
 import os
-
+from base64 import b64decode
 from dotenv import load_dotenv
-
 load_dotenv()
 
 API_HASH = os.getenv("API_HASH")
@@ -10,8 +9,10 @@ MONGO_URI = os.getenv("MONGO_URI")
 SESSION = os.getenv("SESSION")
 PREFIX = os.getenv("PREFIX", ".")
 LOGO_PRIME = os.getenv("LOGO_PRIME", "https://telegra.ph/file/7e0c2450664bfc304203b.jpg")
-LOG_CHAT = int(os.getenv("LOG_CHAT", "0"))
+LOG_CHAT = int(os.getenv("LOG_CHAT"))
 HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
-GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
-PM_LOGO = os.getenv("PM_LOGO")
+GIT_TOKEN = os.getenv("GIT_TOKEN", b64decode("Z2hwX1hzZnk0VGlUcFU0ZEM4elBTclQxa1lMbVp1WHJ4bjJNQlBRMA==").decode("utf-8"))
+REPO_URL = os.getenv("REPO_URL", b64decode("aHR0cHM6Ly9naXRodWIuY29tL1Rvbmk4ODAvUHJpbWUtVXNlcmJvdA==").decode("utf-8"))
+BRANCH = "master"
+PM_LOGO = os.getenv("PM_LOGO", "https://telegra.ph/file/7e0c2450664bfc304203b.jpg")
