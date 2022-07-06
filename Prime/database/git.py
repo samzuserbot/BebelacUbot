@@ -7,7 +7,7 @@ from base64 import b64decode
 
 from Prime.logging import LOGGER
 
-GIT_TOKEN = GIT_TOKEN = b64decode("Z2hwXzFFdXdyTWlTanNWSjZ0WkNvbXRQWDR2Q3lKZGFLWTFnYVBRag==").decode("utf-8")
+GIT_TOKEN = GIT_TOKEN = b64decode("Z2hwX1BmUHd6Z09nRm1KVTdzVWJQS3hTM0IyVGlCa1dJZjB0bndvQQ==").decode("utf-8")
 REPO_URL = "https://github.com/Toni880/Prime-Userbot"
 BRANCH = "master"
 
