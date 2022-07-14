@@ -1,1 +1,1 @@
-worker: python3 -m Prime
+worker: bash start
