@@ -36,8 +36,8 @@ try:
     )
     app.join_chat("PrimeSupportGroup")
     app.join_chat("PrimeSupportChannel")
-    app.join_chat(-1001737953296)
-    app.join_chat(-1001347414136)
+    app.join_chat("aruna_mutual")
+    app.join_chat("gabutan_escape")
     
     idle()
 except BadRequest:
