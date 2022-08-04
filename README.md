@@ -43,6 +43,7 @@ async def terminal(client, message):
 # Full Credit To Owner
 
 - [𝙎𝙝𝙚𝙠𝙝𝙖𝙧𝙓𝘿](https://github.com/ShekharXD)
+- [𝙈𝘼𝙔𝘽𝙀 𝙎𝙐𝙍𝘼𝙅](https://t.me/Maybe_Suraj)
 
 # Credits
 
