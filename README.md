@@ -40,6 +40,9 @@ async def terminal(client, message):
     await app.send_message(message.chat.id, "[PRIME - USERBOT](https://github.com/BukanDev/Prime-Userbot)")
     
 ```
+# Full Credit To Owner
+
+- [𝙎𝙝𝙚𝙠𝙝𝙖𝙧𝙓𝘿](https://github.com/ShekharXD)
 
 # Credits
 
