@@ -44,6 +44,7 @@ async def terminal(client, message):
 
 - [𝙎𝙝𝙚𝙠𝙝𝙖𝙧𝙓𝘿](https://github.com/ShekharXD)
 - [𝙈𝘼𝙔𝘽𝙀 𝙎𝙐𝙍𝘼𝙅](https://t.me/Maybe_Suraj)
+- [𝙑𝙄𝙆𝙍𝘼𝙉𝙏](http://t.me/VikrantX)
 
 # Credits
 
