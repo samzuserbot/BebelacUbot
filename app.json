@@ -26,7 +26,7 @@
     "HEROKU_APP_NAME": {
       "description": "Isi dengan app name heroku jika kamu menggunakan heroku.",
       "required": false
-    },
+    }
   },
   "buildpacks": [
     {
@@ -35,11 +35,5 @@
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
+  ]
 }
