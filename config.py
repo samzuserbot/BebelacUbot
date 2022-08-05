@@ -14,5 +14,3 @@ HEROKU_API = os.getenv("HEROKU_API", None)
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", None)
 GIT_TOKEN = os.getenv("GIT_TOKEN", "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")
 PM_LOGO = os.getenv("PM_LOGO", "https://telegra.ph/file/7e0c2450664bfc304203b.jpg")
-BLACKLIST_GCAST = {int(x) for x in os.getenv
-                  ("BLACKLIST_GCAST", "").split()}
