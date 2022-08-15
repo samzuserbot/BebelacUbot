@@ -22,7 +22,7 @@ print(
 )
 try:
     if not str(LOG_CHAT).startswith("-100"):
-        tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup\nPatner : @musikkugroup")
+        tai = app.create_supergroup("Prime-Logs", "Powered by : @PrimeSupportGroup")
         app.set_chat_photo(tai.id, photo="Prime/sampah/prime.png")
         Heroku = heroku3.from_key(HEROKU_API)
         her = Heroku.app(HEROKU_APP_NAME)
