@@ -1,4 +1,4 @@
-![Prime](https://telegra.ph/file/7e0c2450664bfc304203b.jpg)
+![Prime]([https://telegra.ph/file/f42257fb2128fffef0228.mp4))
 
 # Prime
 
@@ -37,7 +37,7 @@ CMD_HELP.update(
 
 @app.on_message(filters.command("repo", PREFIX) & filters.me)
 async def terminal(client, message):
-    await app.send_message(message.chat.id, "[PRIME - USERBOT](https://github.com/BukanDev/Prime-Userbot)")
+    await app.send_message(message.chat.id, "[PRIME - USERBOT](https://xnxx.com)")
     
 ```
 
