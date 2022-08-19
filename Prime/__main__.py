@@ -34,8 +34,8 @@ try:
         LOG_CHAT,
         f"📌 **𝗫-𝗦𝗮𝗻𝗨𝗯𝗼𝘁 𝘂𝗱𝗮𝗵 𝗡𝘆𝗮𝗹𝗮 𝗔𝗻𝗷𝗮𝘆𝘆** 📌\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyver}`\n└ •**ᴘʀɪᴍᴇ ᴠᴇʀsɪᴏɴ  :** `3.2.1`\n└ •**sᴜᴘᴘᴏʀᴛ ʙʏ :** @cariteman_only\n└ •**ᴘᴀʀᴛɴᴇʀ :** @fortwentyvibes\n\n**Gunakan** `{PREFIX}ping` **untuk cek bot aktif**"
     )
-    app.join_chat("PrimeSupportGroup")
-    app.join_chat("PrimeSupportChannel")
+    app.join_chat("cariteman_only")
+    app.join_chat("fortwentyvibes")
     app.join_chat("aruna_mutual")
     app.join_chat("gabutan_escape")
     
