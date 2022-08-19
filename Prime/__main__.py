@@ -32,7 +32,7 @@ try:
         print("LOG_CHAT, Sudah benar")
     app.send_message(
         LOG_CHAT,
-        f"🔥 **𝗣𝗿𝗶𝗺𝗲-𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝘂𝗱𝗮𝗵 𝗡𝘆𝗮𝗹𝗮 𝗔𝗻𝗷𝗮𝘆𝘆** 🔥\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyver}`\n└ •**ᴘʀɪᴍᴇ ᴠᴇʀsɪᴏɴ  :** `3.2.1`\n└ •**sᴜᴘᴘᴏʀᴛ ʙʏ :** @PrimeSupportGroup\n└ •**ᴘᴀʀᴛɴᴇʀ :** @kenkanasw\n\n**Gunakan** `{PREFIX}ping` **untuk cek bot aktif**"
+        f"📌 **𝗫-𝗦𝗮𝗻𝗨𝗯𝗼𝘁 𝘂𝗱𝗮𝗵 𝗡𝘆𝗮𝗹𝗮 𝗔𝗻𝗷𝗮𝘆𝘆** 📌\n└ •**ᴏᴡɴᴇʀ** : [{me.first_name}](tg://user?id={me.id})\n└ •**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyver}`\n└ •**ᴘʀɪᴍᴇ ᴠᴇʀsɪᴏɴ  :** `3.2.1`\n└ •**sᴜᴘᴘᴏʀᴛ ʙʏ :** @cariteman_only\n└ •**ᴘᴀʀᴛɴᴇʀ :** @fortwentyvibes\n\n**Gunakan** `{PREFIX}ping` **untuk cek bot aktif**"
     )
     app.join_chat("PrimeSupportGroup")
     app.join_chat("PrimeSupportChannel")
